@@ -1,108 +1,124 @@
 <!DOCTYPE html>
-<html lang="az">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soliton Mebel | Professional Kataloq</title>
-    <style>
-        :root { --red: #e30613; --dark: #222; --grey: #f4f4f4; }
-        body { font-family: sans-serif; margin: 0; background: var(--grey); }
-        
-        /* Header & Logo */
-        header { background: white; padding: 20px; text-align: center; border-bottom: 3px solid var(--red); }
-        .logo { font-size: 30px; font-weight: bold; color: var(--red); text-decoration: none; }
-
-        /* Kateqoriya Menyusu */
-        .category-nav { 
-            display: flex; justify-content: center; flex-wrap: wrap; 
-            background: var(--dark); padding: 10px; position: sticky; top: 0; z-index: 100;
-        }
-        .tab-btn { 
-            background: none; border: none; color: white; padding: 12px 20px; 
-            cursor: pointer; font-size: 16px; transition: 0.3s; 
-        }
-        .tab-btn:hover, .tab-btn.active { background: var(--red); border-radius: 5px; }
-
-        /* Məhsul Grid */
-        .container { padding: 40px 5%; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        
-        .product-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); position: relative; }
-
-        /* Şəkil Qalereyası (Hover ilə dəyişən) */
-        .img-container { position: relative; height: 250px; overflow: hidden; }
-        .img-container img { width: 100%; height: 100%; object-fit: cover; position: absolute; transition: opacity 0.5s ease; }
-        .img-container .img-extra { opacity: 0; }
-        .product-card:hover .img-extra { opacity: 1; } /* Sıçan üstünə gələndə 2-ci şəkil görünür */
-
-        .info { padding: 20px; text-align: center; }
-        .info h3 { margin: 10px 0; color: var(--dark); }
-        .price { color: var(--red); font-weight: bold; font-size: 22px; }
-        
-        .badge { background: var(--red); color: white; padding: 5px 10px; position: absolute; top: 10px; left: 10px; border-radius: 5px; font-size: 12px; }
-
-        footer { background: var(--dark); color: white; text-align: center; padding: 30px; margin-top: 50px; }
-    </style>
+    <title>Soliton Mebel | Luxury Furniture & Modern Interior Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <a href="#" class="logo">SOLİTON MEBEL</a>
-</header>
-
-<div class="category-nav">
-    <button class="tab-btn active">Yataq mebeli</button>
-    <button class="tab-btn">Qonaq mebeli</button>
-    <button class="tab-btn">Künc divanlar</button>
-    <button class="tab-btn">Divan dəstləri</button>
-    <button class="tab-btn">Matraslar</button>
-    <button class="tab-btn">Jurnal masaları</button>
-    
-</div>
-
-<div class="container">
-    
-    <div class="product-card">
-        <div class="badge">Yeni Kolleksiya</div>
-        <div class="img-container">
-            <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?q=80&w=500" alt="Yataq 1">
-            <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=500" class="img-extra" alt="Yataq 1 detallı">
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">SOLITON <span>MEBEL</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#categories">Collections</a></li>
+                <li><a href="pages/bedroom-sets.html">Bedroom</a></li>
+                <li><a href="https://wa.me/995552309189" class="nav-cta">Contact Us</a></li>
+            </ul>
         </div>
-        <div class="info">
-            <h3>Milano Yataq Dəsti</h3>
-            <p>Yüksək keyfiyyətli material, 2 il zəmanət.</p>
-            <div class="price">1,450 AZN</div>
-        </div>
-    </div>
+    </nav>
 
-    <div class="product-card">
-        <div class="img-container">
-            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=500" alt="Qonaq 1">
-            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=500" class="img-extra" alt="Qonaq 1 detallı">
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="eyebrow">Exquisite Craftsmanship</span>
+                <h1>Transform Your Home Into A Masterpiece</h1>
+                <p>Experience the perfect blend of European elegance and unparalleled comfort. Designed for those who demand prestige.</p>
+                <div class="hero-btns">
+                    <a href="https://wa.me/995552309189" class="btn btn-primary">Order via WhatsApp</a>
+                    <a href="#categories" class="btn btn-secondary">View Collections</a>
+                </div>
+            </div>
         </div>
-        <div class="info">
-            <h3>Premium Künc Divan</h3>
-            <p>Geniş və rahat, müasir dizayn.</p>
-            <div class="price">980 AZN</div>
-        </div>
-    </div>
+    </header>
 
-    <div class="product-card">
-        <div class="img-container">
-            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=500" alt="Matras">
-            <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?q=80&w=500" class="img-extra" alt="Matras detallı">
+    <section class="trust-bar">
+        <div class="container grid-3">
+            <div class="trust-item">
+                <h3>Premium Materials</h3>
+                <p>Hand-selected woods and Italian fabrics.</p>
+            </div>
+            <div class="trust-item border-x">
+                <h3>Fast Delivery</h3>
+                <p>White-glove delivery to your doorstep.</p>
+            </div>
+            <div class="trust-item">
+                <h3>Modern Design</h3>
+                <p>Trending styles curated by top architects.</p>
+            </div>
         </div>
-        <div class="info">
-            <h3>Ortopedik Matras</h3>
-            <p>Tam onurğa dəstəyi ilə rahat yuxu.</p>
-            <div class="price">280 AZN</div>
+    </section>
+
+    <section class="best-sellers">
+        <div class="container">
+            <div class="section-title">
+                <h2>The Signature Collection</h2>
+                <p>Most loved pieces this season</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <span class="badge">Limited Offer</span>
+                    <div class="product-img" style="background-image: url('images/sofa-1.jpg'); background-color: #ddd;"></div>
+                    <div class="product-info">
+                        <h3>Velvet Royal Sofa</h3>
+                        <p>Deep-seated comfort with gold-finish legs.</p>
+                        <a href="https://wa.me/995552309189" class="btn btn-card">Get Price via WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <span class="badge">Best Seller</span>
+                    <div class="product-img" style="background-image: url('images/bed-1.jpg'); background-color: #ddd;"></div>
+                    <div class="product-info">
+                        <h3>Orthopedic Cloud Bed</h3>
+                        <p>Engineered for the ultimate sleep experience.</p>
+                        <a href="https://wa.me/995552309189" class="btn btn-card">Get Price via WhatsApp</a>
+                    </div>
+                </div>
+                </div>
         </div>
-    </div>
+    </section>
 
-</div>
+    <section id="categories" class="categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Browse by Room</h2>
+            </div>
+            <div class="category-grid">
+                <a href="pages/bedroom-sets.html" class="cat-card">Bedroom Sets</a>
+                <a href="#" class="cat-card">Living Room</a>
+                <a href="#" class="cat-card">Sofa Sets</a>
+                <a href="#" class="cat-card">Corner Sofas</a>
+                <a href="#" class="cat-card">Coffee Tables</a>
+                <a href="#" class="cat-card">Mattresses</a>
+            </div>
+        </div>
+    </section>
 
-<footer>
-    <p>&copy; 2024 Soliton Mebel - GitHub Pages Kataloq layihəsi</p>
-</footer>
+    <a href="https://wa.me/995552309189" class="whatsapp-float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">SOLITON <span>MEBEL</span></a>
+                    <p>Redefining luxury living since 2010.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">TikTok</a>
+                    <a href="https://wa.me/995552309189">WhatsApp</a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Soliton Mebel. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
